@@ -1,0 +1,470 @@
+"","Var1","Freq"
+"1","-0",1
+"2","-2",853
+"3","-3",10
+"4","-4",3
+"5","-5",1
+"6","-8",1
+"7","    <2",1
+"8","  <2secs",1
+"9"," <2",3
+"10"," > 10",1
+"11"," 2",1
+"12"," 2 seconds",1
+"13"," 2 secs",1
+"14"," 3 seconds",1
+"15"," LESS 2",1
+"16"," less than 2",4
+"17"," less than 2 seconds",1
+"18"," more than 2 seconds",1
+"19"," under 2",1
+"20","#,2sec",1
+"21",", 2 seconds",1
+"22",",<2",3
+"23",",2",33
+"24",",2sec",1
+"25",".>2",1
+"26",".2",2
+"27","\\,2sec",1
+"28","+2",24
+"29","+3",1
+"30","+4",2
+"31","<",53
+"32","< :2s",1
+"33","< :2S",1
+"34","< 1",3
+"35","< 1 SECOND",1
+"36","< 2",276
+"37","< 2 mm",3
+"38","< 2 sces",1
+"39","< 2 sec",65
+"40","< 2 Sec",2
+"41","< 2 seconds",26
+"42","< 2 SECONDS",22
+"43","< 2 secs",46
+"44","< 2 Secs",1
+"45","< 2 SECS",3
+"46","< 2sec",4
+"47","< 2seconds",2
+"48","< 2secs",13
+"49","< 2SECS",1
+"50","< 3",6
+"51","< 4",1
+"52","<""",1
+"53","<,2",1
+"54","<>:/5",1
+"55","<02",2
+"56","<1",15
+"57","<1 sec",1
+"58","<12",2
+"59","<2",27838
+"60","<2 days",1
+"61","<2 sec",15
+"62","<2 seconds",177
+"63","<2 Seconds",1
+"64","<2 SECONDS",4
+"65","<2 secs",561
+"66","<2 Secs",11
+"67","<2 SECS",5
+"68","<2 ses",1
+"69","<2.",21
+"70","<2:-5",1
+"71","<2:.5",1
+"72","<2:/3",1
+"73","<20",4
+"74","<21",1
+"75","<22",1
+"76","<2s",259
+"77","<2S",64
+"78","<2sec",155
+"79","<2SEC",5
+"80","<2seconds",57
+"81","<2SECONDS",2
+"82","<2secs",719
+"83","<2Secs",3
+"84","<2SECS",2
+"85","<3",137
+"86","<3 sec",1
+"87","<3 seconds",1
+"88","<3 secs",1
+"89","<3secs",1
+"90","<4",16
+"91","<5",3
+"92","<50",1
+"93","<52",1
+"94","<6",3
+"95","<60",1
+"96","=4",1
+"97",">",4
+"98","> 2",18
+"99","> 2 sec",4
+"100","> 2 seconds",6
+"101","> 2 secs",5
+"102","> 3",3
+"103",">10 secs",1
+"104",">2",1740
+"105",">2 sec",20
+"106",">2 seconds",14
+"107",">2 secs",22
+"108",">2 SECS",1
+"109",">2.",1
+"110",">2:-3",1
+"111",">2:.5",1
+"112",">25",1
+"113",">2s",9
+"114",">2S",4
+"115",">2sec",11
+"116",">2SEC",1
+"117",">2seconds",5
+"118",">2secs",89
+"119",">2SECS",1
+"120",">3",76
+"121",">4",13
+"122",">5",17
+"123",">6",1
+"124",">6 secs",1
+"125","0",14
+"126","0.:43",1
+"127","0.5",2
+"128","01",2
+"129","02",24
+"130","02 c + p",1
+"131","02 secs",1
+"132","03",2
+"133","05 RIGHT FOOT",1
+"134","1",4372
+"135","1-2",261
+"136","1-5",1
+"137","1 sec",1
+"138","1 SEC",1
+"139","1 second",1
+"140","1.3",1
+"141","1.5",6
+"142","1.9",1
+"143","10",5
+"144","12",5
+"145","15",3
+"146","1s:ec",1
+"147","2",41518
+"148","2- 5 SECONDS",1
+"149","2-:58",1
+"150","2-3",22
+"151","2-3secs",2
+"152","2-5",647
+"153","2-5 seconds",73
+"154","2-5 Seconds",5
+"155","2-5 SECONDS",10
+"156","2-5 secs",2
+"157","2-5 secs.",1
+"158","2-5 sesonds",1
+"159","2 - 5",2
+"160","2 - 5 seconds",6
+"161","2 - 5 SECONDS",9
+"162","2 sec",5
+"163","2 Sec",3
+"164","2 SEC",3
+"165","2 seconds",43
+"166","2 Seconds",3
+"167","2 SECONDS",13
+"168","2 secs",16
+"169","2 Secs",1
+"170","2 SECS",1
+"171","2 to 5",13
+"172","2 TO 5",2
+"173","2 TO 5 SECONDS",39
+"174","2.0",1
+"175","2.1",1
+"176","2.4",1
+"177","2.5",116
+"178","2.6",1
+"179","2.7",1
+"180","2/3",1
+"181","2/3 secs",1
+"182","2+",5
+"183","2<",4
+"184","2=5 seconds",1
+"185","2>",2
+"186","22",12
+"187","22 Sec",1
+"188","25",1
+"189","27",1
+"190","2s",11
+"191","2s and under",1
+"192","2s:ec",2
+"193","2secs",12
+"194","3",1773
+"195","3-4",3
+"196","3-4 seconds",1
+"197","3-5",1
+"198","3 - 4",1
+"199","3 on injured limb",1
+"200","3 sec",1
+"201","3 seconds",7
+"202","3 SECONDS",1
+"203","3 secs",6
+"204","3 to 4",1
+"205","3.2",1
+"206","3.5",5
+"207","3+",3
+"208","3>",4
+"209","33",1
+"210","360",1
+"211","3secs",1
+"212","4",346
+"213","4-5",1
+"214","4 seconds",3
+"215","4 Seconds",1
+"216","4 SECONDS",1
+"217","4 to 5",1
+"218","4.4",1
+"219","4.5",1
+"220","4+",1
+"221","4peripheral 2central",1
+"222","5",167
+"223","5 seconds",2
+"224","5 secs",2
+"225","6",8
+"226","6.4",2
+"227","68",1
+"228","7",7
+"229","7.5 seconds",1
+"230","71",1
+"231","72",1
+"232","8",3
+"233","8 seconds",2
+"234","9",2
+"235","98",1
+"236","above 2",3
+"237","ABOVE 2",2
+"238","absent",1
+"239","Absent, more than 2",1
+"240","BEFORE 2",2
+"241","below 2",56
+"242","Below 2",12
+"243","BELOW 2",291
+"244","below 2 seconds",1
+"245","BELOW 3",2
+"246","belwo 2",1
+"247","belwo 2 secs",1
+"248","between 2 and 5",2
+"249","CENTRAL & PERIPH",1
+"250","CRT <3",1
+"251","excess of 2 seconds",1
+"252","Good cap refills",1
+"253","great then 2",1
+"254","greater than 2",19
+"255","Greater than 2",43
+"256","GREATER THAN 2",3
+"257","greater than 2sec",1
+"258","GREATER THAN 2SEC",3
+"259","Greater than 2secs",1
+"260","greater than 3",1
+"261","Greater than 3",1
+"262","greater than2sec",1
+"263","Greather than 2",1
+"264","L",1
+"265","L2ss than 2",1
+"266","L3",1
+"267","LASS THAN 2",1
+"268","LEASS THAN 2",1
+"269","lee than 2",1
+"270","lees than 2",3
+"271","les than 2",5
+"272","Les than 2",8
+"273","LES THAN 2",1
+"274","Les than 2 seconds",3
+"275","less  than 2",1
+"276","Less  than 2",1
+"277","less  than 2 seconds",1
+"278","less 2",39
+"279","Less 2",1
+"280","LESS 2",38
+"281","less 2 secs",4
+"282","less 3",1
+"283","LESS 3",2
+"284","less 4",1
+"285","less htan 2",1
+"286","less tahn 2 seconds",1
+"287","Less tahn 2 seconds",2
+"288","less tan 2",1
+"289","less tan 2 seconds",1
+"290","less tghan 2",1
+"291","Less tha 2",1
+"292","less tha 2 sec",2
+"293","Less tha 2 seconds",1
+"294","less tha 2 SECS",1
+"295","less than",1
+"296","Less than",2
+"297","LESS THAN",2
+"298","less than  2",1
+"299","Less than  2",3
+"300","less than  2 sec",11
+"301","less than  2 seconds",2
+"302","LESS THAN  2 SECONDS",1
+"303","less than  2sec",1
+"304","Less than 1",1
+"305","less than 2",1848
+"306","less thaN 2",1
+"307","lESS THAN 2",1
+"308","Less than 2",3385
+"309","Less Than 2",2
+"310","LEss than 2",1
+"311","LESS THAN 2",1217
+"312","less than 2  sec",2
+"313","Less than 2 econd",1
+"314","less than 2 sec",256
+"315","Less than 2 sec",3
+"316","LESS THAN 2 SEC",9
+"317","less than 2 sec`",1
+"318","less than 2 secconds",1
+"319","Less than 2 second",1
+"320","less than 2 seconds",1079
+"321","less than 2 Seconds",1
+"322","Less than 2 seconds",287
+"323","LESS THAN 2 SECONDS",136
+"324","less than 2 seconds.",1
+"325","less than 2 secoonds",2
+"326","less than 2 secs",63
+"327","Less than 2 secs",4
+"328","LESS THAN 2 SECS",8
+"329","less than 2 secs.",4
+"330","Less than 2 secs.",1
+"331","less than 2 seocnds",2
+"332","less than 2 seonds",1
+"333","less than 2 sseconds",1
+"334","less than 2econds",2
+"335","less than 2ecs",1
+"336","less than 2s",2
+"337","less than 2sce",1
+"338","less than 2sec",5
+"339","Less than 2sec",1
+"340","LESS THAN 2SEC",3
+"341","less than 2seconds",2
+"342","less than 2secs",20
+"343","Less than 2secs",1
+"344","less than 3",10
+"345","Less than 3",30
+"346","LESS THAN 3",7
+"347","Less than 3 seconds",2
+"348","Less than 3 seconds.",1
+"349","LESS THAN 4",2
+"350","less than 5",2
+"351","Less than 5",1
+"352","LESS THAN 5",1
+"353","LESS THAN 8",1
+"354","less than two",2
+"355","Less than two",10
+"356","less than two second",4
+"357","Less than two second",1
+"358","less than2",2
+"359","Less than2",2
+"360","LESS THAN2",3
+"361","less than2 seconds",3
+"362","less thans 2 seconds",1
+"363","less that 2",1
+"364","less thatn 2",1
+"365","Less the 2",1
+"366","less then 2",6
+"367","Less then 2",9
+"368","LESS THEN 2",1
+"369","less then 2 sec",1
+"370","less then 2 seconds",1
+"371","Less then 2 seconds",1
+"372","Less then 3",1
+"373","Less thjan 2",1
+"374","Less thn 2",1
+"375","less thn 2 seconds",1
+"376","less tjan 2",1
+"377","Less tjan 2",1
+"378","less trhan 2 sec",1
+"379","less2",1
+"380","Less2",1
+"381","LESS2",1
+"382","lesss than 2",2
+"383","LESSS THAN 2",1
+"384","lessthan 2",2
+"385","LESSTHAN 2",2
+"386","LESSTHAN 2 SECONDS",1
+"387","LKESS THAN 3",1
+"388","MINUS 2",1
+"389","Mora  than 2",1
+"390","MORE 2",2
+"391","More than 10",1
+"392","more than 2",102
+"393","More than 2",151
+"394","MORE THAN 2",84
+"395","more than 2 mins",1
+"396","more than 2 sec",11
+"397","More than 2 sec",1
+"398","more than 2 seconds",35
+"399","More than 2 seconds",13
+"400","more than 2 secs",9
+"401","MORE THAN 2 SECS",1
+"402","more than 2secs",1
+"403","more than 3",1
+"404","More than 3",2
+"405","MORE THAN 3",2
+"406","more than 3 seconds",1
+"407","More than 3 seconds",1
+"408","more than 4",1
+"409","More than 4",2
+"410","more than 5",3
+"411","More than 5",1
+"412","more than 5 seconds",1
+"413","More than 5 seconds",2
+"414","MORE THAN 5 SECONDS",1
+"415","more than 8",1
+"416","More than two",1
+"417","More then 2",1
+"418","MORE THEN 2",1
+"419","more then 2 seconds",1
+"420","NO PULSE",1
+"421","Normal",1
+"422","NORMAL",1
+"423","NOT >2 SECS",1
+"424","over 2",26
+"425","Over 2",22
+"426","OVER 2",36
+"427","over 2 sec",3
+"428","over 2 seconds",4
+"429","Over 2 seconds",10
+"430","over 2 secs",1
+"431","OVER 2SEC",1
+"432","Over 3",2
+"433","OVER 3",1
+"434","over 3 sec",1
+"435","Over 3 seconds",1
+"436","over 3 secs",1
+"437","over 4",1
+"438","Over 4",2
+"439","Over 4 seconds",2
+"440","over 5",1
+"441","OVER 5",2
+"442","Over three seconds",2
+"443","Over two seconds",1
+"444","OVERR 2",1
+"445","SAYS NORMAL",1
+"446","under 2",353
+"447","uNDER 2",2
+"448","Under 2",80
+"449","UNDER 2",620
+"450","under 2 s",1
+"451","under 2 sec",10
+"452","Under 2 sec",5
+"453","Under 2 Sec",1
+"454","under 2 seconds",5
+"455","Under 2 seconds",195
+"456","Under 2 seconds-",1
+"457","under 2 secs",12
+"458","Under 2 secs",5
+"459","UNDER 2 SECS",1
+"460","under 3",2
+"461","Under 3",1
+"462","under 3 seconds",1
+"463","Under 3 seconds",5
+"464","Under three seconds",3
+"465","Under two seconds",9
+"466","under2",6
+"467","UNDER2",2
+"468","Under2 seconds",2
+"469","(Missing)",225324
