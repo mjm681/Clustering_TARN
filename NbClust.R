@@ -31,7 +31,7 @@ dum_df <- data.frame(predict(dummy_vars, newdata = cluster_df_na))
 
 ##### Optimising k #####
 
-small_dum_df <- as.matrix(dum_df[1:10000,]) # To test code
+small_dum_df <- as.matrix(dum_df[1:50000,]) # To test code
 
 # Metrics to be used
 metrics <- c("kl", "ch", "hartigan", "cindex", "db", "silhouette","gamma",  
