@@ -1,0 +1,88 @@
+﻿Column Name,Variable Type,Variable Desciption,Note 
+caseid,Generic,Case ID,
+OUT_STAY_LEN,,Total length of stay (days) at outcome,
+PATIENT_GENDER,Demographic,Patient gender,"In cases of gender change, record gender at birth."
+PATIENT_AGE,Demographic,Patient age,
+ISS_x,,Old Injury Severity Score (ISS),NOT USABLE
+OUT_DIS_STATUS,,Outcome status (Alive/Dead),NOT USABLE
+INJURY_TYPE,Injury,Type of injury,"A penetrating injury is a wound with disruption of the body surface that extends into underlying tissue or into a body cavity, e.g. a stabbing or a shooting. A blunt injury is an injury caused by striking or being struck by a blunt surface, e.g. a fall, a blow or being hit by a vehicle."
+INJURY_MECHANISM,Injury,The cause of the patient’s traumatic injuries,
+ASSESS_OXIMETER_SAT,Physiology,Oxygen saturation of arterial blood as %,
+ASSESS_RESP_RATE_VAL,Physiology,Respiratory rate (Number of unassissted breaths per minute),"Ranges from 0 – 70. Normal range 16 – 24. Observations need only to be recorded on ARRIVAL in each location, unless a SERIOUS DETERIORATION has occurred since a previous recording. Observations should be recorded again at time of serious deterioration (in whichever location it occurs). A serious deterioration is defined as a reading of less than 8 or more than 30."
+ASSESS_PULSE_VAL,Physiology,pulse rate in beats per minute,"Observations need only to be recorded on ARRIVAL in each location, unless a SERIOUS DETERIORATION has occurred since a previous recording. Observations should be recorded again at time of serious deterioration (in whichever location it occurs). A serious deterioration is defined as a reading of less than 40 or more than 120."
+ASSESS_GCS_TOTAL,Physiology,Glasgow Coma Scale total,"Assesses eye, verbal and motor response. A number is recorded for each, with each number corresponding to the following states: This gives the patient an overall score from 15, with a score of 3 – 5 indicating serious brain impairment and score of 15 indicating normal functioning.  This total will be automatically calculated by the system using the eye, verbal and motor scores. If you only have the total rather than the individual scores, this can be input using the Total box, which also includes options for Missing assumed normal and Missing assumed abnormal. Observations need only to be recorded on ARRIVAL in each location, unless a SERIOUS DETERIORATION has occurred since a previous recording. Observations should be recorded again at time of serious deterioration (in whichever location it occurs). A serious deterioration is defined as a drop of 2 or more points."
+ANALGESIA_ANALG,Treatment,Type of analgesia received,"Record the first of each different type of Analgesia in Pre Hospital, ED and Critical care only. Thoracic regional blocks & Serratus anterior/Serratus plane should be recorded as either an Epidural or Paravertebral block. Oral analgesia: Should be recorded as Other. IV infusions: Should be recorded as IV Opioid. 
+Common IV Opioids include: Morphine, Alfentanil, Fentanyl, Pethidine, Tramadol."
+ANALGESIA_CONTIN,Treatment,Whether continuous analgesia,
+ANALGESIA_DRUG,Treatment,Analgesia drug recevied,
+ASSESS_DIABP_VAL,Physiology,Diastolic blood pressure,
+ASSESS_SYSBP_VAL,Physiology,Systolic blood pressure,
+ASSESS_AIRWAYS_VAL,Physiology,Airway status value,"Choose from: Normal: Airway patent and not supported. Supported: Airway patent but with simple adjuncts (oropharyngeal tube -including laryngeal mask - or nasopharyngeal tube) or airway positioning to achieve. Obstructed: Airway obstructed at time of observation (with or without simple adjuncts or positioning, or if tracheal tube blocked). Intubated: Tube present in trachea having been inserted previously via mouth (orotracheal) or nose (nasotracheal). Cricothyroidotomy: Tube present in trachea having been inserted previously via cricothyroid membrane (with needle or surgical) as emergency procedure to temporarily support airway. Tracheostomy: Tube present in trachea (surgical or transcutaneous) on longer term basis to support airway."
+BREATHING STATUS,Treatment,Breathing status,"The patient’s breathing status ON ARRIVAL in location. Normal: Breathing comfortably without oxygen or support. Added oxygen: Patient on oxygen via mask on arrival. Respiratory distress: Breathing with difficulty with or without oxygen but with no breathing support in progress. Respiratory arrest: Not breathing and with no respiratory support in progress. Manual ventilation: Forced breathing via mask by squeezing bag or using high pressure oxygen via needle cricothyroidotomy. Continuous positive airway pressure: Breathing spontaneously by mask or other airway (including intubation) with continuous positive airway pressure (CPAP). Non-invasive ventilation: Breathing using BIPAP type machine or mechanical ventilator with pressure support during inspiration but without intubation or cannulation of the trachea. Mechanical ventilation: Breathing using mechanical ventilator (or other machine, including oscillator) via tracheal tube (intubation or tracheostomy). "
+ASSESS_GCS_EYE,Physiology,Glasgow Coma Scale for eye,"Eye Opening, Spontaneous = 4,  To voice = 3,  To Pain = 2,  None = 1"
+ASSESS_GCS_MOTOR,Physiology,Glasgow Coma Scale for motor,"Motor Response , Obeys commands = 6,  Localises = 5,  Withdraws = 4,  Abnormal flexion = 3,  Abnormal extension = 2,  None = 1"
+ASSESS_GCS_VERBAL,Physiology,Glasgow Coma Scale for verbal,"Verbal Response, Orientated = 5,  Confused = 4,  Inappropriate words = 3,  Incomprehensible words = 2,  None = 1"
+FLUID_BLSTYPE,Treatment,The type of fluids administered to the patient,"The type of fluids administered to the patient, 1. Not known, 2. Dextrose, 3. Colloid, 4. Crystalloid, 5. Polygelatine, 6. Starch, 7. Hypertonic saline, 8. Albumin, 9. Hartmans"
+FLUID_VOL,Treatment,Amout of fluid received in unit,The total volume of fluid given to the patient between the start and end fluid times
+SPINAL IMMOBILISATION_SPROT_TYPE,Treatment,Whether any spinal protection was required,"More than one type of spinal protection can be entered If Immobilisation is documented, record as: Collar+blocks and Spinal board in the Pre Hospital environment or Collar+Blocks in ED. Full Spinal Protection = Collar, blocks and board. KED = Kendrick Extracation Device = Full Spinal Protection. 1. Spinal collar, 2. Spinal board, 3. Sandbags and tape, 4. Vacu-mattress, 5. Log roll, 6. Spinal collar and blocks, 7. Head blocks, 8. Full spinal protection, 9. Spinal protection bed, 10. 3 point brace(applied on ward/CC only)"
+BREATHING SUPPORT,Treatment,Breathing support recevied,"Record type of support given to a patient's airway. 1. Oxygen, 2. Manual ventilation (breathing supported by ‘bag’ operated by hand), 3. Mechanical ventilation (via tube), 4. CPAP (Continuous Positive Airway Pressure), 5.  BiPAP (Bi-level Positive Airway Pressure). 6. Bronchodilator"
+CCARE_ARV_DATE,Outcome,Critical care arrival date,The date of arrival in Critical Care in DD/MM/YYYY format
+CCARE_ARV_TIME,Outcome,Critical care arrival time,The time of arrival in Critical Care in HH:MM format
+CCARE_DAYS_IN_UNIT,Outcome,"TOTAL number of days patient spent in Critical Care unit, including multiple visits. ",
+ASSESS_GCS_LEFT_EYE,Physiology,Size of left eye pupil,
+ASSESS_GCS_RIGHT_EYE,Physiology,Size of right eye pupil,
+LIMB SPLINT,Treatment,Whether a patient received a limb splint,
+LIMB SPLINTINTER_LSPLINT_DETAIL,Treatment,Type of splint,
+AIRWAY SUPPORT,Treatment,Airway support received,
+CARDIO RESPIRATORY RESUSCITATION,Treatment,Whether a patient received this procedure,
+CCARE_STAY,Outcome,Whether the patient was admitted to critical care,
+AT_DISCHARGE_OUT_DIS_STATUS,Outcome,Discharge status (Dead/Alive) at discharge,
+OUTCOMEOUT_GOS,Outcome,Glasgow Outcome Scale,The Glasgow Outcome Scale is a 5-level score which measures patient outcome and recovery. Clinical guidance is that: If a patient is discharged home without a CARE PACKAGE in place(i.e. they don't require a carer to perform everyday duties for them) this equates to: Good Recovery. If a patient is sent home with a CARE PACKAGE in place this equates to: Moderate Disability. If a patient is discharged to a rehab unit/ward this equates to: Severe Disability. At present users should aim to complete GOS on Discharge only. 
+AT_DISCHARGE_OUT_STAY_LEN,Outcome,Number of stays at discharge,
+ASSESS_GCS_RCT_LEFT,Physiology,Glasgow Coma Scale for left pupillary response,"Select reactivity from list: 1. Not Applicable, 2. Brisk, 3. Sluggish, 4. Absent"
+ASSESS_GCS_RCT_RIGHT,Physiology,Glasgow Coma Scale for right pupillary response,"Select reactivity from list: 1. Not Applicable, 2. Brisk, 3. Sluggish, 4. Absent"
+CCARE_DEP_DATE,Outcome,The date of leaving Critical Care in DD/MM/YYYY format (e.g. 01/01/2010). ,
+CCARE_DEP_TIME,Outcome,The time of leaving Critical Care in HH:MM format (e.g. 12:00). ,
+ASSESS_CREFILL_NORM,Physiology,Cap refill status,"Normal Capillary Refill time is less than two seconds, Abnormal is more than two seconds."
+ASSESS_CREFILL_TIME,Physiology,Cap refill time (seconds),Time taken (in seconds) for colour to return to the skin of a compressed finger/toe once pressure has been released
+ECG (12 LEAD),Investigation,Whether a patient received this procedure,
+CHEST DRAIN,Treatment,Whether a patient received this procedure,"Record whether chest drain was necessary. Drainage of fluid, air or pus from the inthoracic space. Chest drain does NOT included needle thoracocentesis, which is recorded in a separate question."
+TRANEXAMIC ACID_VOL,Treatment,Volume of Tranexamic Acid given (mg),
+DIRECT COMPRESSION OF EXTERNAL HAEMORRHAGE,Treatment,Whether a patient received this procedure,
+SEDATION/ANAESTHESIA,Treatment,Whether a patient received this procedure,
+ANTICONVULSAN_DATE,Treatment,Whether anticonvulsants drug was received,
+INOTROPES/VASOSUPRESSORS,Treatment,Whether a patient received Vasopressors or inotropes ,
+BLOOD PRODUCTS IN FIRST 24 HOURS_FLUID_TNSTYPE,Treatment,Type of blood product received,
+BLOOD PRODUCTS IN FIRST 24 HOURS_FLUID_UNITS,Treatment,Number of unit blood product received,
+THORACOSTOMY,Treatment,Whether a patient received this procedure,
+OPERATIVE PROCEDURE_PROC,Treatment,Type of operations,
+OPERATIVE PROCEDURE_SURG_GRD,Treatment,Surgeon grade,
+OPERATIVE PROCEDURE_ANTH_GRD,Treatment,Aesthetician grade,
+OPERATIVE PROCEDURE_SURG_SPEC,Treatment,General surgery grade,
+ASSESS_CTS_BODYAREA,Investigation,The Area of the body examined with the CT scan,
+WARMING,Treatment,Whether a patient received this procedure,
+SubmissionID,Generic,Automatically generated unique 12 digit identifier,
+ISS_y,Injury,Injury Severity Score,
+Head,Injury,Abbreviated Injury Scale (AIS),
+Face,Injury,Abbreviated Injury Scale (AIS),
+Chest,Injury,Abbreviated Injury Scale (AIS),
+Abdomen,Injury,Abbreviated Injury Scale (AIS),
+Pelvis,Injury,Abbreviated Injury Scale (AIS),
+Spine,Injury,Abbreviated Injury Scale (AIS),
+Limb,Injury,Abbreviated Injury Scale (AIS),
+Other,Injury,Abbreviated Injury Scale (AIS),
+Combine_Outcome,Outcome,Outcome status (Alive/Dead) combined from DIS_OUT_STATUS from 2 locations,
+CAPTIME_REVISED_IsMoreThan2,Physiology,Whether cap refill is more than 2 seconds,
+lsi_lerner_time,LSI,Whether a patient was classed as urgent (P1/P4/Dead/Non-P1),
+lsicount_lerner_time,LSI,Number of Life Saving Intervention Recevied,
+Has_Lerner_LSI_5_Lerner_time,LSI,Whether a patient received airway LSI,
+lsi_peads,LSI,Whether a patient was classed as urgent in children under 16s (P1/P4/Dead/Non-P1),
+lsicount_peads,LSI,Number of Life Saving Intervention Recevied in children under 16s ,
+Has_Lerner_LSI_5_Lerner_time_peads,LSI,Whether a patient received airway LSI in  children under 16s ,
+Received Airway/Breathing Support,Treatment,"Whether or not the patient had: ASSESS_AIRWAYS_VAL = Supported, Obstructed, Intubated, Cricothyroidotomy, Tracheostomy. AIRWAY SUPPORT = Intubation, Cricothyroidotomy, Tracheostomy. BREATHING SUPPORT = Mechanical ventilation, cpap, bipap.",
+Conflicting Cap Refill Values,Physiology,Whether ASSESS_CREFILL)NORM and CAPTIME_REVISED_IsMoreThan2 are conflicting,
+CC_Arrived,Outcome,True or False depending on if there a date in CCARE_ARV_DATE,
+CC_Departed,Outcome,True or False depending on if there a date in CCARE_DEP_DATE,
+CC_Summary,Outcome,"Merged factor containing CC_Arrived, CC_Departed, CC_Stay",
+ISS_15andOver,Injury,True or False depending on if ISS score ≥15,
+P1_T_or_F,LSI,True or False depending if lsi_lerner_time is P1 or not,
