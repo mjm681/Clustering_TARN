@@ -209,6 +209,23 @@ for (i in 1:nrow(full_data)) {
   }
 }
 
+# If either ASSESS_CREFILL_NORM or CAPTIME_REVISED_IsMoreThan2 is missing, convert NA --> "Not Recorded
+
+sum(is.na(full_data$ASSESS_CREFILL_NORM)) # Checking how many cases are affected
+sum(is.na(full_data$CAPTIME_REVISED_IsMoreThan2)) # Checking how many cases are affected
+
+full_data$ASSESS_CREFILL_NORM <- addLevel(full_data$ASSESS_CREFILL_NORM, "Not Recorded")
+full_data$CAPTIME_REVISED_IsMoreThan2 <- addLevel(full_data$CAPTIME_REVISED_IsMoreThan2, "Not Recorded")
+
+for (i in 1:nrow(full_data)) {
+  if (isTRUE(is.na(full_data[i,44]))) {
+    full_data[i,44] <- "Not Recorded"
+  }
+  if (isTRUE(is.na(full_data[i,73]))) {
+    full_data[i,73] <- "Not Recorded"
+  }
+}
+
 
 # Add new column "Conflicting Cap Refill Values" for conflicting ASSESS_CREFILL_NORM and CAPTIME_REVISED_IsMoreThan2 values
 
