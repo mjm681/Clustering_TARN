@@ -15,7 +15,7 @@ fit_ord <- princals(cluster_df_na, ndim = 2, ordinal = ordinals, knots = knotsGi
 
 fit_ord_sum <- summary(fit_ord)
 
-##### Plots ######
+##### Output Plots ######
 
 pdf("transplot.pdf")
 # Takes each factor and shows the transfromed values
