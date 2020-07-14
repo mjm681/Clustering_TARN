@@ -89,7 +89,12 @@ Results of the NbClust k-optimisation for CLARA.
 
 ### pam_plots
 
-Folder of average silhouette width (ASW) plots for k-optimisation and ASW per cluster and variable importance plots from each round of PAM sampling.
+Folder of average silhouette width (ASW) plots for k-optimisation and ASW per cluster, variable importance plots from each round of PAM sampling. Also contains plots of the structure of the top 3 most important features per cluster per sample.
+
+### clara_plots
+
+Folder of average silhouette width (ASW) per cluster and variable importance plots from CLARA.
+
 
 ## Other
 
