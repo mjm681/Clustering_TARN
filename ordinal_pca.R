@@ -3,7 +3,7 @@
 library(Gifi)
 library(ggplot2)
 
-clara_data <- read.csv("almost_done.csv", header = T, check.names = F, na.strings = "NA", row.names = 1)
+clara_data <- read.csv("final_data.csv", header = T, check.names = F, na.strings = "NA", row.names = 1)
 
 column_names <- c('caseid', 'ASSESS_SYSBP_VAL', 'ASSESS_CREFILL_NORM', 'ASSESS_GCS_MOTOR', 
                   'ASSESS_GCS_TOTAL', 'ASSESS_PULSE_VAL', 'ASSESS_RESP_RATE_VAL', 
