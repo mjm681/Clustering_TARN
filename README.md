@@ -83,6 +83,10 @@ Allows investigation of TARN dataset. Also splits the PAM and CLARA objects into
 
 ## Results
 
+### clara_nbclust.xlsx
+
+Results of the NbClust k-optimisation for CLARA.
+
 ### pam_plots
 
 Folder of average silhouette width (ASW) plots for k-optimisation and ASW per cluster and variable importance plots from each round of PAM sampling.
@@ -93,13 +97,13 @@ Folder of average silhouette width (ASW) plots for k-optimisation and ASW per cl
 
 ### ordinal_pca.R
 
-Dimensionality reduction technique for mixed type data attempted for data exploration
+Dimensionality reduction technique for mixed type data attempted for data exploration.
 * **Input:** Raw TARN data (79 variables), Pre-pocessed and filtered data (86 variables), Clustering data (21 variables)
 * **Output:** Ordinal PCA object and respective plots
 
 ### multiple_factor_analysis.R
 
-Multiple factor analysis for mixed type data attempted for data exploration
+Multiple factor analysis for mixed type data attempted for data exploration.
 * **Input:** Raw TARN data (79 variables), Pre-pocessed and filtered data (86 variables), Clustering data (21 variables)
 * **Output:** MFA object and respective plots
 
