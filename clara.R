@@ -1,5 +1,7 @@
 ##### Setting Up Environment #####
 
+set.seed(123)
+
 library(caret)
 library(ggplot2)
 library(fpc)
@@ -14,20 +16,7 @@ library(reshape)
 
 clara_data <- read.csv("final_data.csv", header = T, check.names = F, na.strings = "NA", row.names = 1)
 
-column_names <- c('caseid', 'ASSESS_SYSBP_VAL', 'ASSESS_CREFILL_NORM', 'ASSESS_GCS_MOTOR', 
-                  'ASSESS_GCS_TOTAL', 'ASSESS_PULSE_VAL', 'ASSESS_RESP_RATE_VAL', 
-                  'INJURY_MECHANISM', 'INJURY_TYPE', 'PATIENT_AGE', 'PATIENT_GENDER', 
-                  'CAPTIME_REVISED_IsMoreThan2', 'Head', 'Face', 'Chest', 'Abdomen', 
-                  'Pelvis', 'Spine', 'Limb', 'Other', 'Has_Lerner_LSI_5_Lerner_time',
-                  'P1_T_or_F')
-
-cols <- c(1, 17, 44, 73, 21, 12, 11, 10, 8, 7, 4, 3, 64:71, 76, 86)
-
-cluster_df <- clara_data[,cols] # Selecting variables for clustering
-rownames(cluster_df) <- cluster_df$caseid # Assingning caseid to rownames 
-cluster_df <- cluster_df[,-1]
-
-cluster_df_na <- cluster_df[complete.cases(cluster_df),] # Exclude any cases with any missing data
+cluster_df_na <- clara_data[complete.cases(clara_data),] # Exclude any cases with any missing data
 
 ##### One-Hot Encoding the Data #####
 
@@ -35,82 +24,9 @@ dummy_vars <- dummyVars("~ ." , cluster_df_na, fullRank = F)
 
 dum_df <- data.frame(predict(dummy_vars, newdata = cluster_df_na))
 
-set.seed(123)
-
-##### NbClust for k-optimisation #####
-
-k_test <- 20 # Number of clusters to try
-
-metrics <- c("kl", "ch", "hartigan", "cindex", "db", "silhouette","gamma",  
-             "ball", "ptbiserial", "gap", "frey", "mcclain", 
-             "gplus",  "dunn", "sdbw") # Metrics used
-graph_metrics <- c("hubert", "sdindex") # Not used
-not_work <- c("ccc", "scott", "marriot", "trcovw", "tracew", "friedman", "rubin",
-              "ratkowsky", "sdindex", "duda","pseudot2", "beale", "tau") # Not used
-distances <- c("Metric","euclidean", "maximum", "manhattan", "canberra", "minkowski") # Distances used
-
-# Making an empty dataframe for results
-tabla <- as.data.frame(matrix(ncol = length(distances), nrow = length(metrics)))
-names(tabla) <- distances
-
-# Running NbClust k-optimisation on all the distances and metrics and saving the result in the dataframe
-for (j in 2:length(distances)){
-  for(i in 1:length(metrics)){
-    
-    nb = NbClust(dum_df, distance = distances[j],
-                 min.nc = 2, max.nc = k_test, 
-                 method = "ward.D", index = metrics[i])
-    tabla[i,j] = nb$Best.nc[1]
-    tabla[i,1] = metrics[i]
-    
-  }}
-
-write.csv(tabla, "opt_k.csv") # Save the result of the optimisation
-
-### Plotting k-optimising ###
-
-melt_tabla <- melt(tabla, id = "Metric")
-melt_tabla$value <- as.factor(melt_tabla$value)
-
-for_plot <- melt_tabla[,-1]
-count_data <- as.data.frame(table(for_plot))
-
-plot_opt_k <- ggplot(count_data, aes(x = value, y = Freq ,fill = variable, group = variable)) +
-  geom_bar(position = "stack",  stat = "identity") +
-  labs(title = "Estimating Optimum Number of Clusters")
 
 
-sum_freq <- as.data.frame(table(for_plot$value))
-
-most_k_ind <- as.numeric(which.max(sum_freq$Freq)) # Save the most reported value of k 
-
-##### Silhouette Width Plot #####
-
-sil_width <- c(NA)
-
-for(i in 2:k_test){
-  
-  clara_fit <- clara(dum_df,
-                     k = i,
-                     metric = 'euclidean',
-                     stand = T,
-                     samples = 100,
-                     sampsize = 15000,
-                     pamLike = T,
-                     correct.d = T)
-  sil_width[i] <- clara_fit$silinfo$avg.width
-  
-}
-
-# Plot sihouette width (higher is better)
-pdf("silhouette width.pdf")
-sil_plot <- plot(1:k_test, sil_width,
-                 xlab = "Number of clusters",
-                 ylab = "Silhouette Width")
-sil_plot <- sil_plot + lines(1:k_test, sil_width)
-dev.off()
-
-opt_k <- which.max(sil_width)
+most_k_ind <- 3 # Output from NbClust k-optimisation estimation
 
 ##### Running CLARA #####
 
@@ -119,7 +35,7 @@ clara_res <- clara(dum_df,
                    metric = 'euclidean',
                    stand = T,
                    samples = 100,
-                   sampsize = 15000,
+                   sampsize = 40000,
                    pamLike = T,
                    correct.d = T,
                    keep.data = T)
@@ -144,24 +60,27 @@ dum_data_clusters <- cbind(dum_df, cluster = clara_res$clustering)
 
 data_clusters <- cbind(cluster_df_na, cluster = clara_res$clustering)
 
-##### Visualisation #####
+##### Visualisation using t-SNE #####
 
+# Run t-SNE
 tsne_obj <- Rtsne(dum_df, is_distance = F, check_duplicates = F)
 
+# Manipulate the results of t-SNE into format that can be plotted easier 
 tsne_data <- tsne_obj$Y %>%
   data.frame() %>%
   setNames(c("X", "Y")) %>%
   mutate(cluster = factor(clara_res$clustering),
          name = dum_df$P1_T_or_FTRUE)
 
+# Generate pdf of t-SNE plot
 pdf("tsne_plot.pdf")
 tsne_plot <- ggplot(aes(x = X, y = Y), data = tsne_data) +
   geom_point(aes(color = cluster))
 dev.off()
 
-
 ##### Silhouette info for CLARA result #####
 
+# Make pdf of the silhouette across the clusters
 pdf("sil_plot.pdf")
 fviz_silhouette(clara_res)
 dev.off()
@@ -189,9 +108,8 @@ sil <- clara_res$silinfo$widths[, 1:3]
 neg_sil_index <- which(sil[, 'sil_width'] < 0)
 sil[neg_sil_index, , drop = FALSE]
 
-
 ##### Saving #####
 
-now <- Sys.time()
+now <- Sys.time() # Make unique save from the time and date
 file_name <- paste("clara_", format(now, "%Y%m%d_%H%M%S_"), sep = "")
 save(list = ls(), file = file_name)
