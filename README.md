@@ -78,13 +78,28 @@ Feature importance determination using Boruta (random forest wrapper algorithm).
 ### plotting_variables.R 
 
 Allows investigation of TARN dataset. Also splits the PAM and CLARA objects into clusters to facilitate visualisation.
+* **Input:** Raw TARN data (79 variables), Pre-pocessed and filtered data (86 variables), Clustering data (21 variables), PAM object or CLARA object
+* **Output:** PAM and CLARA objects split into lists, visualisation of the total data or data structure per cluster
 
 ## Results
 
+### pam_plots
 
+Folder of average silhouette width (ASW) plots for k-optimisation and ASW per cluster and variable importance plots from each round of PAM sampling.
 
 ## Other
 
 *This section briefly introduces some other techniques that were attempted but were not part of the final report.*
 
+### ordinal_pca.R
+
+Dimensionality reduction technique for mixed type data attempted for data exploration
+* **Input:** Raw TARN data (79 variables), Pre-pocessed and filtered data (86 variables), Clustering data (21 variables)
+* **Output:** Ordinal PCA object and respective plots
+
+### multiple_factor_analysis.R
+
+Multiple factor analysis for mixed type data attempted for data exploration
+* **Input:** Raw TARN data (79 variables), Pre-pocessed and filtered data (86 variables), Clustering data (21 variables)
+* **Output:** MFA object and respective plots
 
