@@ -95,7 +95,6 @@ Folder of average silhouette width (ASW) plots for k-optimisation and ASW per cl
 
 Folder of average silhouette width (ASW) per cluster and variable importance plots from CLARA.
 
-
 ## Other
 
 *This section briefly introduces some other techniques that were attempted but were not part of the final report.*
@@ -105,6 +104,10 @@ Folder of average silhouette width (ASW) per cluster and variable importance plo
 Dimensionality reduction technique for mixed type data attempted for data exploration.
 * **Input:** Raw TARN data (79 variables), Pre-pocessed and filtered data (86 variables), Clustering data (21 variables)
 * **Output:** Ordinal PCA object and respective plots
+
+### oPCA_plots
+
+Graphical outputs from ordinal_pca.R using a sample n = 10,000.
 
 ### multiple_factor_analysis.R
 
