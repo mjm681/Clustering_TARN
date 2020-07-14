@@ -115,3 +115,5 @@ Multiple factor analysis for mixed type data attempted for data exploration.
 * **Input:** Raw TARN data (79 variables), Pre-pocessed and filtered data (86 variables), Clustering data (21 variables)
 * **Output:** MFA object and respective plots
 
+## Author 
+* **Megan Munro**
